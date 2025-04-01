@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "38330011-e213-4333-97c2-9379d0268a9e",
+		"name": "Operadoras API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43656685",
+		"_collection_link": "https://gabrielflores-6249893.postman.co/workspace/Gabriel-Flores's-Workspace~34f6e7a7-1aeb-492f-842a-c18295848d46/collection/43656685-38330011-e213-4333-97c2-9379d0268a9e?action=share&source=collection_link&creator=43656685"
+	},
+	"item": [
+		{
+			"name": "Pesquisar SP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=sp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "sp",
+							"description": "Busca pela UF: SP"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Campinas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=campinas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "campinas",
+							"description": "Pesquisar pela cidade Campinas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Razão Social",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=ASSOCIACAO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ASSOCIACAO",
+							"description": "Pesquisa por razão social"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar CNPJ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=34673588000166",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "34673588000166",
+							"description": "Pesquisar por CNPJ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
