@@ -15,7 +15,7 @@ def search_operadoras():
         return jsonify([])
     
     # Converte as colunas para string para evitar erros com valores não-string
-    df['Registro_ANS'] = df['CNPJ'].astype(str)
+    df['Registro_ANS'] = df['Registro_ANS'].astype(str)
     df['CNPJ'] = df['CNPJ'].astype(str)
     df['Razao_Social'] = df['Razao_Social'].astype(str)
     df['Nome_Fantasia'] = df['Nome_Fantasia'].astype(str)
